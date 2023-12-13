@@ -1,7 +1,7 @@
 #include<stdio.h>
-main() {
+void main() {
 
-         biggest();
+         
          factorial();
         reverse();
 }

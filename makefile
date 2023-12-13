@@ -1,9 +1,11 @@
-ABC.exe: f1.o f2.o f3.o
-	gcc -o ABC.exe f1.o f2.o f3.o
-f1.o:f1.c
-	gcc -c f1.c
-f2.o:f2.c
-	gcc -c f2.c
-f3.o:f3.c
-	gcc -c f3.c
+abc.exe:main.o rev.o fact.o 
+	gcc -o abc.exe main.o rev.o fact.o 
+main.o:main.c
+	gcc -c main.c
+rev.o:rev.c
+	gcc -c rev.c
+fact.o:fact.c
+	gcc -c fact.c
 
+clear:
+	 rm -rf *.o
